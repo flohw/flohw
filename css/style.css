@@ -1,0 +1,75 @@
+html { width: 210mm; margin: 0 auto; }
+body { width: 100%; margin: 0 auto; padding: 20px; font-size: 1em; font-family: sans-serif; }
+a { text-decoration: none; color: #9999ff; font-weight: bold;}
+a:visited { color: #ff9999; }
+
+
+body > header { height: 120px; }
+body > header #me { float: left; width: 50%; position: relative; }
+body > header #me h1 { margin: 0; }
+body > header #me div.vcard { font-style: italic; }
+body > header #me div.vcard p.adresse { margin: 0; }
+body > header #me p.permis { margin: 0; }
+
+body > header #contact p { margin: 0 0 0 75%;}
+body > header #contact a { font-weight: normal; color: #000; text-decoration: none; }
+
+body > header + h2 { text-align: center; margin-top: 0; }
+
+section { clear: both; border-top: 2px dashed rgb(153, 155, 155); }
+section aside { float: left; width: 25%; color: rgb(153, 153, 153); }
+section article { float: right; width: 75%; }
+section article header h3 { color: rgb(131, 189, 215); float: left; margin: 1em 0 0 0; padding-top: 0.313em}
+
+section article header h3 { margin: 0; }
+
+section article header .date {
+	margin: 0; 
+	color: rgb(153, 155, 155);
+	background-color: rgb(218, 221, 220);
+	border: 1px solid rgb(171, 172, 171); 
+	padding: 0.313em 0;
+	border-radius: 10px;
+	float: right; 
+	width: 25%;
+	text-align: center;
+}
+
+section article .entreprise {
+	font-style: italic;
+	margin: 0 0 1em 0;
+	font-family: sans-serif;
+	font-size: 0.778em;
+	color: black;
+	font-weight: normal;
+}
+section article .description {
+	clear: both;
+}
+
+section div.table { display: table; width: 75%; }
+section div.table div.row { display: table-row; }
+section div.table div.row article { display: table-cell; float: none; width: 50%; }
+section div.table div.row article .description { margin: 0; }
+
+[class*="icon-"] {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	vertical-align: text-top;
+	background-image: url("../img/sprite-32.png");
+	background-position: 0;
+	background-repeat: no-repeat;
+}
+.icon-phone { background-position: 0 0; }
+.icon-mail { background-position: -16px 0; }
+.icon-github { background-position: -32px 0; }
+.icon-website { background-position: -48px 0; }
+.clear { clear: both; }
+
+@media print {
+	body { box-shadow: none; padding: 0; }
+	section article header h3,
+	section article header .date { margin: 0; }
+}
